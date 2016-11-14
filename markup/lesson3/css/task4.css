@@ -1,0 +1,16 @@
+﻿div a[href^="http"]{
+	color: #f70;
+}
+div a[href*="google.com"]{
+	color: #666;
+}
+div [target="_blank"]:after{
+	content: "\21F1";
+	display: inline-block;
+	transform-origin: 70% 70%;
+	-webkit-transform: scale(-1,1);
+	-moz-transform: scale(-1,1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
