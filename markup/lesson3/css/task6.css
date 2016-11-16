@@ -1,5 +1,48 @@
-﻿body
-{
-	font: 11px Verdana, sans-serif;
-	margin: 20px;
+﻿body{
+	font: 20px Verdana, sans-serif;
+	margin: 40px;
+}
+input{
+	display: none;
+}
+label{
+	padding-right: 40px;
+	text-decoration: underline;
+}
+span{
+	color: white;
+	padding: 2px;
+	border-radius: 5px;
+}
+label[for="red"] {
+	color: red;
+}
+label[for="green"]{
+	color: green;
+}
+label[for="blue"]{
+	color: blue;
+}
+#red:checked ~ label[for="red"],
+#green:checked ~ label[for="green"],
+#blue:checked ~ label[for="blue"]{
+	opacity: 0.5;
+}
+.red{
+	background: red;
+}
+.green{
+	background: green;
+}
+.blue{
+	background: blue;
+}
+#red:checked ~ .red{
+  display: none;
+}
+#green:checked ~ .green{
+  display: none;
+}
+#blue:checked ~ .blue{
+  display: none;
 }
