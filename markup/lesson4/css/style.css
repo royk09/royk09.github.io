@@ -19,9 +19,10 @@
 	font-family: "Impact";
 	font-size: 20px;
 	font-stretch: ultra-condensed;
-	
-	
-	
+}
+.menu a:hover{
+	background-color: #eeeeee;
+	color: #a0a0a0;
 }
 
 
