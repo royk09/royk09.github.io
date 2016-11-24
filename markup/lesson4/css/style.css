@@ -2,13 +2,12 @@
 	background: #9966ff;
 }
 .menu{
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	list-style-type: none;
 	text-align: center;
 	background: #9966ff;
 	width: 900px;
-
 }
 
 .menu li{
