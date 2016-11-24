@@ -1,16 +1,20 @@
-﻿.menu{
-	margin: 0px;
-	padding: 0px;
+﻿.container{
+	background: #9966ff;
+}
+.menu{
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	text-align: center;
-	background-color: #9966ff;
+	background: #9966ff;
 	width: 900px;
+
 }
+
 .menu li{
 	display: inline;
 }
 .menu a{
-
 	color: #ffffff;
 	text-decoration: none;
 	padding: 7px 14px;
@@ -18,10 +22,9 @@
 	text-transform: uppercase;
 	font-family: "Impact";
 	font-size: 20px;
-	font-stretch: ultra-condensed;
 }
 .menu a:hover{
-	background-color: #eeeeee;
+	background: #eeeeee;
 	color: #a0a0a0;
 }
 
