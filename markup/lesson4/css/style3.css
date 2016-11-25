@@ -1,0 +1,37 @@
+﻿body{
+	background: #fafafa
+}
+div.pager{
+	text-align: center;
+	vertical-align: bottom;
+}
+.pager span{
+	vertical-align: 1px;
+}
+.pager .navi,
+.pager a:nth-child(5){
+	border: none;
+}
+.pager a:nth-child(5){
+	vertical-align: sub;
+}
+.pager a{
+	color: #a23bd2;
+	text-decoration: none;
+	text-align:center;
+	padding: 5px 8px;
+	display: inline-block;
+	text-transform: uppercase;
+	font: 10px sans-serif;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+}
+.pager a:hover,
+.pager a:active{
+	background: #a13bcf;
+	color: #f9fbfa;
+	border-color: #7c12bc;
+}
+.pager a:visited{
+	opacity: 0.5;
+}
