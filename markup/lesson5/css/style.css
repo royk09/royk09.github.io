@@ -1,40 +1,55 @@
-﻿.menuContainer1, .menuContainer1 .menu{
-	background: #9966ff;
-}
-.menuContainer2, .menuContainer2 .submenu{
-	background: #eeeeee;
-}
-.menu, .submenu{
-	margin: auto;
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
-	width: 900px;
-}
+﻿.main-menu {
+    padding: 0;
+	margin: 0;
+    list-style: none;
+    background: #9966ff;
+	text-align:center;
+	width:100%;	
+	position: relative;
 
-.menu li, .submenu li{
-	display: inline-block;
 }
-.menu a{
-	color: #ffffff;
+.main-menu > li{
+    display: inline-block;
+}
+.main-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #ffffff;
 	text-decoration: none;
-	padding: 7px 8px;
-	display: inline-block;
 	text-transform: uppercase;
 	font-family: "Impact";
 	font-size: 20px;
 }
-.submenu a{
-	color: #aa8887;
-	text-decoration: none;
-	padding: 7px 10px;
-	display: inline-block;
-	font-family: "Arial";
-	font-size: 16px;
-}
-.menu a:hover{
+.main-menu a:hover {
 	background: #eeeeee;
 	color: #a0a0a0;
 }
-
-
+.main-menu .sub-menu {
+	box-sizing: border-box;
+    padding-left:490px;
+	margin:0;
+	position: absolute;
+	width:100%;
+	text-align:left;
+	background: #eeeeee;
+	visibility: hidden;
+	top:100%;
+	left:0;
+}
+.sub-menu > li{
+    display: inline-block;
+}
+.main-menu .sub-menu a{
+	color: #aa8887;
+	text-transform: none;
+	padding: 10px 5px;
+	display: block;
+	font-family: "Arial";
+	font-size: 16px;
+}
+.main-menu > li:hover .sub-menu{
+	visibility: visible;
+}
+.sub-menu a:hover{
+	background: #fcfcfc;
+}
