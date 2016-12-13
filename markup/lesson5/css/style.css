@@ -6,9 +6,8 @@
 	text-align:center;
 	width:100%;	
 	position: relative;
-
 }
-.main-menu > li{
+.main-menu > li, .sub-menu > li{
     display: inline-block;
 }
 .main-menu a {
@@ -35,9 +34,6 @@
 	visibility: hidden;
 	top:100%;
 	left:0;
-}
-.sub-menu > li{
-    display: inline-block;
 }
 .main-menu .sub-menu a{
 	color: #aa8887;
