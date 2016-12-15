@@ -3,7 +3,8 @@
 	margin: 0;
 }
 .main-menu {
-
+	padding: 0;
+	margin: auto;
     list-style: none;
     background: #9966ff;
 	text-align:center;
