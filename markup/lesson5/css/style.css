@@ -1,6 +1,14 @@
 ﻿*{
     padding: 0;
-	margin: 0;
+	margin: 0;	
+}
+.wrapper{
+	overflow: hidden;
+	min-width:900px;
+	height:78px;
+}
+.container{
+	background: #9966ff;
 }
 .main-menu {
 	padding: 0;
@@ -28,16 +36,14 @@
 	color: #a0a0a0;
 }
 .main-menu .sub-menu {
-	box-sizing: border-box;
-    --padding-left:21%;
-	margin:0;
-	position: absolute;
-	width:100%;
-	text-align:left;
+	padding: 0 100%;
+	margin: 0 -100%;
 	background: #eeeeee;
-	visibility: hidden;
-	--top:100%;
+	position:absolute;
+	top: 100%;
 	left:0;
+	text-align:left;
+	visibility: hidden;
 }
 .main-menu .sub-menu a{
 	color: #aa8887;
