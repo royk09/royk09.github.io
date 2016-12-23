@@ -2,16 +2,28 @@
     padding: 0;
 	margin: 0;	
 }
-.head-value{
-	width: 296px;
-	margin: 100px auto;
-	text-align: center;
+div.form{
+		border-radius: 10px;
+		border: 2px solid #BADA55;
+		width: 296px;
 }
- .head-value p{
+.form .head-value{
+	--width: 296px;
+	text-align: center;
 	background: #ee8129;
+}
+ .form .head-value p{
+	
 	color: #ffffff;
 	font: bold 24px "Trebuchet MS", serif;
 	text-transform: uppercase;
 	padding: 25px 0 21px 0;
-	border-radius: 5px 5px 0 0;
+
+}
+.form .content{
+	--width: 296px;
+	background: yellow;
+}
+ button{
+	background: #ee8129
 }
