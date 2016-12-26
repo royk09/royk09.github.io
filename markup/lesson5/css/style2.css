@@ -3,27 +3,80 @@
 	margin: 0;	
 }
 div.form{
-		border-radius: 10px;
-		border: 2px solid #BADA55;
-		width: 296px;
+	margin-left: 100px;
+	width: 296px;
+	font-family: "Trebuchet MS", serif;
 }
 .form .head-value{
-	--width: 296px;
 	text-align: center;
 	background: #ee8129;
+	border-radius: 5px 5px 0 0;
 }
  .form .head-value p{
-	
 	color: #ffffff;
-	font: bold 24px "Trebuchet MS", serif;
+	font-weight: bold;
+	font-size:24px;
 	text-transform: uppercase;
-	padding: 25px 0 21px 0;
-
+	padding: 26px 0 19px 0;
 }
 .form .content{
-	--width: 296px;
-	background: yellow;
+	border: 4px solid #ee8129;
+	border-radius: 0 0 5px 5px;
+	height: 387px;
+	text-align: center;
+	position: relative;
 }
- button{
-	background: #ee8129
+.content p:first-child{
+	font-size: 24px;
+	text-transform: uppercase;
+	padding-top: 17px;
+	color: #3f4042;
+}
+.content .price{
+	padding: 10px 0 0 82px;
+	font-size: 72px;
+	font-weight: bold;
+	color:#35495a;
+	text-align: left;
+}
+
+.content .price:before{
+	content: "$";
+	font-size: 21px;
+	position:absolute;
+	left: 68px;
+	top: 70px;
+}
+.content .price:after{
+	content: "Monthly";
+	font-size: 18px;
+	position:absolute;
+	top:115px;
+	left:158px;
+	font-weight: normal;
+}
+.list{
+	margin: 24px 15px 17px 14px;
+}
+.list li{
+	list-style-position: inside;
+	text-align:left;
+	list-style: none;
+	margin-bottom: 1px;
+	--padding: 6px 0 6px 34px;
+}
+.list li:before{
+    content: "";
+	background: url(../images/list.png);
+    display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+.list a{
+	text-decoration: none;
+	padding: 6px 0 6px 34px;
+	border: 1px solid black;
+	background: #edf5fd;
 }
