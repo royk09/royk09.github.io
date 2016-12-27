@@ -6,11 +6,14 @@ div.form{
 	margin-left: 100px;
 	width: 296px;
 	font-family: "Trebuchet MS", serif;
+	box-shadow: 0 0 10px 5px #cbe2ef;
+	border-radius: 5px;
 }
 .form .head-value{
 	text-align: center;
 	background: #ee8129;
 	border-radius: 5px 5px 0 0;
+
 }
  .form .head-value p{
 	color: #ffffff;
