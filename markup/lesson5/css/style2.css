@@ -3,7 +3,7 @@
 	margin: 0;	
 }
 div.form{
-	margin-left: 100px;
+	margin: 100px 0 0 100px;
 	width: 296px;
 	font-family: "Trebuchet MS", serif;
 	box-shadow: 0 0 10px 5px #cbe2ef;
