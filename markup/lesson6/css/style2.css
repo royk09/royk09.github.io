@@ -46,4 +46,11 @@ h2.reviews-header{
 	background: #f7f7f7;
 	text-align: left;
 	margin-left: 125px;
+	
+}
+.comment h4.client-name{
+	padding: 16px 22px 12px 15px;
+}
+.comment h4.client-name a{
+	text-decoration:none;
 }
