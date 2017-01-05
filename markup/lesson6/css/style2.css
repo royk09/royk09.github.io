@@ -3,6 +3,47 @@
 	margin:0;
 }
 .reviews{
-	background: url(../images/background.jpg) repeat-y;
-	background-size: 100%;
+	background: url(../images/background.jpg) no-repeat;
+	background-size: 100% 100%;
+	min-height: 316px;
+	min-width:1022px;
+}
+.position-review{
+	width: 1022px;
+	margin: 0 auto;
+	
+}
+h2.reviews-header{
+	font: 40px 'Trebuchet MS', serif;
+	color: #3170a8;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 58px 0 42px 0;
+}
+.reviews-header .first{
+	color: #ee8129;
+}
+.reviews .client{
+	width: 490px;
+	min-height: 99px;
+	display:inline-block;
+	position: relative;
+	padding-bottom: 26px;
+	-margin-left: -4px;
+}
+.reviews .client:nth-child(2n){
+	margin: 0 -4px 0 39px;;
+}
+.client-photo{
+	display:block;
+	position: absolute;
+	
+}
+.comment{
+	display:block;
+	position:relative;
+	width: 365px;
+	background: #f7f7f7;
+	text-align: left;
+	margin-left: 125px;
 }
