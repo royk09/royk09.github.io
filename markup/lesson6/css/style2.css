@@ -37,8 +37,6 @@ h2.reviews-header{
 	position: absolute;	
 }
 .comment{
-	display:block;
-	--position:relative;
 	width: 365px;
 	background: #f7f7f7;
 	text-align: left;
@@ -49,12 +47,10 @@ h2.reviews-header{
 .comment::before{
 	content:'';
 	position:absolute;
-	--display: block;
 	border: 12.5px solid transparent;	
 	border-right: 15px solid #f7f7f7;
 	left: 98px;
 	top:37px;
-	
 	vertical-align: middle;
 }
 .comment h4.client-name{
