@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Futura Book BT';
+    src: url(../fonts/futura-book-bt.ttf);
+}
+
+@font-face {
+    font-family: 'Futura BT';
+    src: url(../fonts/futurabt-bold.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,57 +18,79 @@ body{
 }
 
 .header{
-    width: 1043px;
+    width: 1046px;
     margin: 0 auto;
-}
-
-.header a{
-    text-decoration: none;
-    color: #989898;
 }
 
 .header .company-name a{
     margin: 39px 0 44px 0;
     float: left;
-    font: 36px 'Futura Book BT', sans-serif;
+    font: 37px 'Futura Book BT', sans-serif;
     color: #ee8129;
-    letter-spacing: 0.9px;
-}
-.header .company-name span{
-    font: 700 36px 'Futura BT', sans-serif;
-    letter-spacing: 2.3px;
-    color: #3070a8;
-    text-transform: uppercase;
 }
 
-.header ul{
+.header .company-name span{
+    padding-left: 2px;
+    color: #3070a8;
+    font: 36px 'Futura BT', sans-serif;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+.header a{
+    text-decoration: none;
+    color: #989898;
+}
+
+.header .menu{
     float: right;
 }
-.header li{
+
+.header .menu li{
     display: inline-block;
     list-style-type: none;
-    font: 500 14px 'Open Sans', sans-serif;
+    font: 14px 'Open Sans', sans-serif;
     letter-spacing: 0.4px;
     padding-top: 61px;
     text-transform: uppercase;
 }
 
-.header li a{
+.header .menu li a{
     padding: 0 17px 0 19px;
 }
-.header li a:last-child{
-    --padding-right: 0;
-}
-.header li a:hover{
+
+.header .menu li a:hover{
     color: #3070a8;
     padding-bottom: 33px;
     border-bottom: 4px solid #3070a8;
 }
 
 .banner{
-    margin-top: 116px;
-    background: url("../images/background-banner.jpg") 100% 100% no-repeat fixed;
+    margin-top: 117px;
+    background: url(../images/background-banner.jpg) 100% 100% no-repeat fixed;
     background-size: cover;
     height: 585px;
+    text-align: center;
+    color: #ffffff;
 }
 
+.banner .banner-text{
+    padding-top: 140px;
+    font: 36px 'Futura Book BT', sans-serif;
+    width: 1024px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.banner .banner-text span{
+    font: 47px 'Futura BT', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner .description{
+    margin: 0 auto;
+    padding-top: 15px;
+    font: italic 20px 'Calibri', sans-serif;
+    width: 585px;
+    text-shadow: 0 1px 0 #213a54;
+    line-height: 1.5;
+}
