@@ -1,3 +1,4 @@
+/*-----Fonts----*/
 @font-face {
     font-family: 'Futura Book BT';
     src: url(../fonts/futura-book-bt.ttf);
@@ -14,16 +15,15 @@
 }
 body{
     min-width: 1023px;
-    border: 1px solid black;
 }
-
+/*----Style for Header----*/
 .header{
     width: 1046px;
     margin: 0 auto;
 }
 
 .header .company-name a{
-    margin: 39px 0 44px 0;
+    margin: 39px 0 42px 0;
     float: left;
     font: 37px 'Futura Book BT', sans-serif;
     color: #ee8129;
@@ -60,12 +60,18 @@ body{
 
 .header .menu li a:hover{
     color: #3070a8;
-    padding-bottom: 33px;
+    padding-bottom: 32px;
     border-bottom: 4px solid #3070a8;
 }
 
+.clear-float{
+    clear: right;
+    height: 0;
+    overflow: hidden;
+}
+/*--------Style for banner-----*/
 .banner{
-    margin-top: 117px;
+    margin-top: 36px;
     background: url(../images/background-banner.jpg) 100% 100% no-repeat fixed;
     background-size: cover;
     height: 585px;
@@ -93,4 +99,19 @@ body{
     width: 585px;
     text-shadow: 0 1px 0 #213a54;
     line-height: 1.5;
+}
+
+.banner-button{
+    background: none;
+    border: 1px solid #8fa0ac;
+    font: 16px 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 17px 63px 18px 62px;
+    margin-top: 38px;
+}
+
+.banner-button:hover{
+    text-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 5px #ffffff;
 }
