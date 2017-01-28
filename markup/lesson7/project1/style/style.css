@@ -1,4 +1,5 @@
 /*-----Fonts----*/
+
 @font-face {
     font-family: 'Futura Book BT';
     src: url(../fonts/futura-book-bt.ttf);
@@ -16,7 +17,9 @@
 body{
     min-width: 1023px;
 }
+
 /*----Style for Header----*/
+
 .header{
     width: 1046px;
     margin: 0 auto;
@@ -48,7 +51,7 @@ body{
 .header .menu li{
     display: inline-block;
     list-style-type: none;
-    font: 14px 'Open Sans', sans-serif;
+    font: 600 14px 'Open Sans', sans-serif;
     letter-spacing: 0.4px;
     padding-top: 61px;
     text-transform: uppercase;
@@ -69,10 +72,13 @@ body{
     height: 0;
     overflow: hidden;
 }
+
 /*--------Style for banner-----*/
+
 .banner{
     margin-top: 36px;
-    background: url(../images/background-banner.jpg) 100% 100% no-repeat fixed;
+    background: url(../images/background-banner.jpg) 100% 100% no-repeat;
+    background-position: center;
     background-size: cover;
     height: 585px;
     text-align: center;
@@ -115,3 +121,54 @@ body{
     text-shadow: 0 0 5px #ffffff;
     box-shadow: 0 0 5px #ffffff;
 }
+
+/*--------Style for Services--------*/
+
+.services-wrapper{
+    height: 563px;
+    overflow: hidden;
+}
+.services-wrapper .services-title{
+    margin-top: 61px;
+    font: bold 30px 'Trebuchet MS', sans-serif;
+    color: #41525c;
+    text-transform: uppercase;
+    text-align: center;
+}
+.services-wrapper .services-list-wrapper{
+    position: relative;
+    left: 50%;
+    float: left;
+}
+.services-wrapper .service {
+    position: relative;
+    right: 50%;
+    float: left;
+    margin: 70px 52px 0 0;
+    width: 305px;
+    text-align: center;
+}
+
+.services-wrapper .service:last-child {
+    margin-right: 0;
+}
+
+.services-wrapper .service p{
+    margin-top: 18px;
+    font: 31px 'Futura Book BT', sans-serif;
+    text-transform: uppercase;
+}
+
+.services-wrapper p a {
+    color: #3070a8;
+    text-decoration: none;
+}
+
+.services-wrapper p.service-desc{
+    margin-top: 14px;
+    font: 400 14px 'Open Sans', sans-serif;
+    color: #a1a1a1;
+    line-height: 1.8;
+    text-transform: none;
+}
+
