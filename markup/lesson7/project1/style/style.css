@@ -16,6 +16,7 @@
 }
 body{
     min-width: 1023px;
+
 }
 
 /*----Style for Header----*/
@@ -171,4 +172,60 @@ body{
     line-height: 1.8;
     text-transform: none;
 }
+/*---------------Middle Section------------------*/
 
+.middle-section-wrapper{
+    height: 577px;
+    background: url("../images/middle-section.jpg") 100% 100% no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.middle-section-wrapper .middle-section {
+    width: 1023px;
+    margin: 0 auto;
+}
+
+.middle-section-wrapper .middle-section h1{
+    padding: 75px 0 3px 0;
+    font: 600 26px 'Futura Book BT', sans-serif;
+    text-transform: uppercase;
+    color: #ee8129;
+    line-height: 1.88;
+}
+
+.middle-section-wrapper .middle-section h2{
+    font: italic 400 19px 'Open Sans', sans-serif;
+    color: #ffffff;
+    line-height: 1.88;
+}
+.middle-section .middle-section-list{
+    width: 650px;
+    padding-top: 28px;
+    max-height: 270px;
+}
+
+.middle-section .middle-section-list ul{
+    list-style: none;
+}
+
+.middle-section .middle-section-list ul li::before{
+    content: url("../images/marker1.png");
+    position: relative;
+    padding-right: 13px;
+}
+
+.middle-section .middle-section-list ul li:nth-child(2n)::before{
+    content: url("../images/marker2.png");
+}
+
+.middle-section .middle-section-list ul li{
+    font: 600 14px 'Open Sans', sans-serif;
+    padding-bottom: 12px;
+    line-height: 2.2;
+    margin-left: 19px;
+    color: #828383;
+}
+
+.middle-section .middle-section-list ul li:nth-child(2n){
+    color: #2d679a;
+}

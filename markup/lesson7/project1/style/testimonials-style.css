@@ -1,0 +1,76 @@
+﻿*{
+	padding:0;
+	margin:0;
+}
+.reviews{
+	background: url(../images/background.jpg) no-repeat;
+	background-size: 100% 100%;
+	min-height: 316px;
+	min-width:1022px;
+}
+.position-review{
+	width: 1022px;
+	margin: 0 auto;
+}
+h2.reviews-header{
+	font: 40px 'Trebuchet MS', serif;
+	color: #3170a8;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 58px 0 42px 0;
+}
+.reviews-header .first{
+	color: #ee8129;
+}
+.reviews .client{
+	width: 490px;
+	min-height: 99px;
+	display:inline-block;
+	position: relative;
+	padding-bottom: 26px;
+	vertical-align:top;
+}
+.reviews .client:nth-child(2n){
+	margin: 0 -4px 0 39px;;
+}
+.client-photo{
+	position: absolute;	
+}
+.comment{
+	width: 365px;
+	background: #f7f7f7;
+	text-align: left;
+	margin-left: 125px;
+	max-height:138px;
+	overflow:auto;
+}
+.comment::before{
+	content:'';
+	position:absolute;
+	border: 12.5px solid transparent;	
+	border-right: 15px solid #f7f7f7;
+	left: 98px;
+	top:37px;
+	vertical-align: middle;
+}
+.comment h4.client-name{
+	padding: 13px 4px 9px 0;
+	color: #3070a8;
+	font: bold italic 13px 'Trebuchet MS', serif;
+	border-bottom: 1px dotted #3070a8;
+	margin: 0 18px 0 16px;
+}
+.comment h4.client-name a{
+	text-decoration:none;
+	color: #3070a8;
+	margin-left:-1px;
+}
+.comment h4.client-name .cust{
+	float:right;
+}
+p.text-review{
+	padding: 8px 18px 12px 18px;
+	color: #666666;
+	font: 13px 'Trebuchet MS', serif;
+	line-height:20px;
+}

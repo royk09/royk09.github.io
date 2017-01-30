@@ -1,0 +1,147 @@
+﻿
+.pricing h1{
+	padding-top: 68px;
+	font: bold 30px "Trebuchet MS", serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #41525c;
+}
+.pricing{
+	text-align: center;
+}
+.best-value-pricing,
+.standard-pricing,
+.ultimate-pricing{
+	margin: 57px auto;
+	width: 296px;
+	font-family: "Trebuchet MS", serif;
+	box-shadow: 0 0 10px #cde2ee;
+	border-radius: 5px;
+	display: inline-block;
+}
+.best-value-pricing{
+	z-index: 1;
+	position:relative;
+}
+.standard-pricing{
+	box-shadow: none;
+	width: 291px;	
+	margin: 0 -6px;
+	z-index: -1;
+}
+.ultimate-pricing{
+	box-shadow: none;
+	width: 289px;	
+	margin: 0 -6px;
+	z-index: -1;
+}
+.head-value{
+	text-align: center;
+	background: #ee8129;
+	border-radius: 5px 5px 0 0;
+}
+.standard-pricing .head-value{
+	background: #37c2d3;
+}
+.ultimate-pricing .head-value{
+	background: #1cb79a;
+}
+.head-value p{
+	color: #ffffff;
+	font-weight: bold;
+	font-size:24px;
+	text-transform: uppercase;
+	padding: 26px 0 19px 0;
+}
+.standard-pricing .head-value p,
+.ultimate-pricing .head-value p{
+	padding: 20px 0 15px 0;
+}
+.content{
+	border: 4px solid #ee8129;
+	border-radius: 0 0 5px 5px;
+	height: 387px;
+	text-align: center;
+	position: relative;
+}
+.standard-pricing .content,
+.ultimate-pricing .content{
+	border: 1px solid #e8eaec;
+	height: 376px;
+}
+.content p:first-child{
+	font-size: 24px;
+	text-transform: uppercase;
+	padding-top: 17px;
+	color: #3f4042;
+}
+ .content .price{
+	padding: 10px 0 0 82px;
+	font-size: 72px;
+	font-weight: bold;
+	color:#35495a;
+	text-align: left;
+}
+
+.content .price:before{
+	content: "$";
+	font-size: 21px;
+	position:absolute;
+	left: 68px;
+	top: 70px;
+}
+.content .price:after{
+	content: "Monthly";
+	font-size: 18px;
+	position:absolute;
+	top:115px;
+	left:158px;
+	font-weight: normal;
+}
+.list{
+	margin: 24px 15px 18px 14px;
+}
+.list li{
+	list-style-position: inside;
+	text-align:left;
+	list-style: none;
+	margin-bottom: 1px;
+	background: #edf5fd;
+}
+ul.list li:nth-child(2n){
+	background: #f5f5f6
+}
+.list a:before{
+    content: "";
+	background: url(../images/list.png);
+    display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-size: contain;
+    background-repeat: no-repeat;
+	margin-left:34px;
+	padding-left: 17px;
+}
+.list a{
+	display: block;
+	text-decoration: none;
+	padding: 7px 0;
+	color: #888c94;
+}
+ .pricing button{
+	width:252px;
+	font: bold 14px "Trebuchet MS", serif;
+	text-transform: uppercase;
+	background: #ee8129;
+	border: none;
+	border-radius: 5px;
+	padding: 11px 0;
+	color: #ffffff;
+	box-shadow: 0 3px 0 #b3560b;
+} 
+.standard-pricing button,
+.ultimate-pricing button{
+	background: #3371a6;
+	box-shadow: 0 3px 0 #16436a;
+} 
+
