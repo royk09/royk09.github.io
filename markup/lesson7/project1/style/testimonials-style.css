@@ -1,8 +1,4 @@
-﻿*{
-	padding:0;
-	margin:0;
-}
-.reviews{
+﻿.reviews{
 	background: url(../images/background.jpg) no-repeat;
 	background-size: 100% 100%;
 	min-height: 316px;
@@ -17,7 +13,7 @@ h2.reviews-header{
 	color: #3170a8;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 58px 0 42px 0;
+	padding: 49px 0 42px 0;
 }
 .reviews-header .first{
 	color: #ee8129;

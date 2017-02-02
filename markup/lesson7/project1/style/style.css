@@ -145,7 +145,7 @@ body{
     position: relative;
     right: 50%;
     float: left;
-    margin: 70px 52px 0 0;
+    margin: 54px 52px 0 0;
     width: 305px;
     text-align: center;
 }
@@ -155,7 +155,7 @@ body{
 }
 
 .services-wrapper .service p{
-    margin-top: 18px;
+    margin-top: 17px;
     font: 31px 'Futura Book BT', sans-serif;
     text-transform: uppercase;
 }
