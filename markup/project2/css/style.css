@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.images{
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.images .img{
+    display: inline-block;
+    width: 360px;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 26px;
+    text-align: center;
+}
+.images .img img {
+    display: block;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    bottom: -50%;
+    right: -50%;
+    margin: auto;
+}
