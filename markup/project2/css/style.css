@@ -1,23 +1,41 @@
+@font-face {
+    font-family: 'Lato'; /* Имя шрифта */
+    src: url(../fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+}
 *{
     margin: 0;
     padding: 0;
 }
 
-.images{
-    max-width: 1140px;
-    margin: 0 auto;
-    border: 1px solid black;
+.content{
+    text-align: center;
 }
-.images .img{
+.content h1{
+    font: 40px 'Lato', sanc-serif;
+    color: #2d3950;
+    letter-spacing: 0.5px;
+}
+.content p{
+    font: 14px 'Lato', sanc-serif;
+    color: #909090;
+    letter-spacing: 0.4px;
+}
+
+.images-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.images-wrapper .image{
     display: inline-block;
     width: 360px;
     height: 260px;
     overflow: hidden;
     position: relative;
-    margin-right: 26px;
-    text-align: center;
+    margin: 13px;
 }
-.images .img img {
+
+.images-wrapper .image img{
     display: block;
     position: absolute;
     left: -50%;
@@ -25,4 +43,17 @@
     bottom: -50%;
     right: -50%;
     margin: auto;
+    z-index: 1;
 }
+.images-wrapper .image .overlay{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+}
+
+
