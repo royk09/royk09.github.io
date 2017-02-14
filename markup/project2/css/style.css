@@ -11,11 +11,13 @@
     text-align: center;
 }
 .content h1{
+    margin-top: 51px;
     font: 40px 'Lato', sanc-serif;
     color: #2d3950;
     letter-spacing: 0.5px;
 }
 .content p{
+    margin: 17px 0 67px;
     font: 14px 'Lato', sanc-serif;
     color: #909090;
     letter-spacing: 0.4px;
@@ -35,7 +37,8 @@
     margin: 13px;
 }
 
-.images-wrapper .image img{
+.images-wrapper .image img,
+.images-wrapper .image .overlay .buttons{
     display: block;
     position: absolute;
     left: -50%;
@@ -43,6 +46,7 @@
     bottom: -50%;
     right: -50%;
     margin: auto;
+
     z-index: 1;
 }
 .images-wrapper .image .overlay{
@@ -54,6 +58,7 @@
     bottom: 0;
     z-index: 5;
     background: rgba(57,174,247,0.9);
+
 }
 
 .images-wrapper .image:hover .overlay{
@@ -61,8 +66,22 @@
 }
 
 .images-wrapper .image .overlay .buttons{
-
+    width: 90px;
+    height: 42px;
 }
+
 .images-wrapper .image .overlay button{
-    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.images-wrapper .image .overlay button:hover{
+    background: rgba(37,166,247,0.9);
 }
