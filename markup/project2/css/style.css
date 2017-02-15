@@ -12,13 +12,13 @@
 }
 .content h1{
     margin-top: 51px;
-    font: 40px 'Lato', sanc-serif;
+    font: 40px 'Lato', sans-serif;
     color: #2d3950;
     letter-spacing: 0.5px;
 }
 .content p{
     margin: 17px 0 67px;
-    font: 14px 'Lato', sanc-serif;
+    font: 14px 'Lato', sans-serif;
     color: #909090;
     letter-spacing: 0.4px;
 }
