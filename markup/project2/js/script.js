@@ -29,7 +29,8 @@ $(document).ready(function() {
             "top": "-14px",
             "background": "#25a6f7",
             "font-size": "10px",
-            "padding": "8px 10px"
+            "padding": "8px 10px",
+            "cursor": "pointer"
         });
         $(".popup-image").animate({"width": $(".images-wrapper").width()-30, "height": $(".images-wrapper").height()-30}, 800);
         $(".content").animate({"opacity": "0.1"},800);
