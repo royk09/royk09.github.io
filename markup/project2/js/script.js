@@ -3,20 +3,36 @@
  */
 
 $(document).ready(function() {
-    $('.zoom').click(function () {
+    $(".zoom").click(function () {
         var button = $(this);
         var img = (button.closest(".image").children("img"));
         var src = img.attr("src");
         $(".images-wrapper").append("<div class='popup-image'>" +
-                                        "<img src='"+src+"' class='resize-image' />" +
+                                        "<span class='close'><i class='fa fa-times' aria-hidden='true'></i></span>" +
                                     "</div>");
         $(".images-wrapper .popup-image").css({"position": "absolute",
-            "top":"0",
             "display":"block",
-            "top": "13px",
-            "left": "13px",
-        "z-index": "50"});
-        $('.popup-image img').animate({'width': $(".images-wrapper").width()-28, 'height': $(".images-wrapper").height()-28}, 800);
+            "background": "url(" + src + ") no-repeat center",
+            "-webkit-background-size": "cover",
+            "-moz-background-size": "cover",
+            "-o-background-size": "cover",
+            "background-size": "cover",
+            "top": "11px",
+            "left": "11px",
+            "border": "2px solid #999999",
+            "z-index": "50"});
+        $(".popup-image .close").css({
+            "position": "absolute",
+            "z-index": "51",
+            "color": "#fff",
+            "right":"20px",
+            "top": "-14px",
+            "background": "#25a6f7",
+            "font-size": "10px",
+            "padding": "8px 10px"
+        });
+        $(".popup-image").animate({"width": $(".images-wrapper").width()-32, "height": $(".images-wrapper").height()-32}, 800);
+        $(".content").animate({"opacity": "0.1"},800);
 
 
         /**       $('.zoom').fadeOut(2000);
@@ -33,11 +49,12 @@ $(document).ready(function() {
          );
          */
 
-    $(".popup-image").click(function(){    // Событие клика на затемненный фон
+    $(".close").click(function(){    // Событие клика на затемненный фон
         $(".popup-image").fadeOut(1000);    // Медленно убираем всплывающее окно
+        $(".content").animate({"opacity": "1"},1000);
         setTimeout(function() {    // Выставляем таймер
             $(".popup-image").remove(); // Удаляем разметку всплывающего окна
-        }, 800);
+        }, 1000);
     });
     });
 });
