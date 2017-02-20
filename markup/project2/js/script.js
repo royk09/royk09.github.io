@@ -31,7 +31,7 @@ $(document).ready(function() {
             "font-size": "10px",
             "padding": "8px 10px"
         });
-        $(".popup-image").animate({"width": $(".images-wrapper").width()-32, "height": $(".images-wrapper").height()-32}, 800);
+        $(".popup-image").animate({"width": $(".images-wrapper").width()-30, "height": $(".images-wrapper").height()-30}, 800);
         $(".content").animate({"opacity": "0.1"},800);
 
 
