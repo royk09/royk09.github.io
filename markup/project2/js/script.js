@@ -32,8 +32,8 @@ $(document).ready(function() {
             "padding": "8px 10px",
             "cursor": "pointer"
         });
-        $(".popup-image").animate({"width": $(".images-wrapper").width()-30, "height": $(".images-wrapper").height()-30}, 800);
-        $(".content").animate({"opacity": "0.1"},800);
+        $(".popup-image").animate({"width": $(".images-wrapper").width()-30, "height": $(".images-wrapper").height()-30}, 400);
+        $(".content").animate({"opacity": "0.1"},400);
 
 
         /**       $('.zoom').fadeOut(2000);
