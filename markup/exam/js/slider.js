@@ -1,0 +1,78 @@
+/**
+ * Created by admin on 28.04.2017.
+ */
+(function ($) {
+    var hwSlideSpeed = 1000;
+    var hwTimeOut = 3000;
+    var hwNeedLinks =true;
+
+    $(document).ready(function(e) {
+        $('.slide').hide().eq(0).show();
+        var slideNum = 0;
+        var slideTime;
+        var slideCount = $('.slide').length;
+
+
+        var animSlide = function(arrow){
+            clearTimeout(slideTime);
+            $('.slide').eq(slideNum).fadeIn( hwSlideSpeed, "linear");
+            if(arrow == "next"){
+                if(slideNum == (slideCount-1)){slideNum=0;}
+                else{slideNum++}
+            }
+            else if(arrow == "prew")
+            {
+                if(slideNum == 0){slideNum=slideCount-1;}
+                else{slideNum-=1}
+            }
+            else{
+                slideNum = arrow;
+            }
+            $('.slide').eq(slideNum).fadeOut( hwSlideSpeed, "linear",  rotator);
+
+        }
+        if(hwNeedLinks){
+            var $linkArrow = $('<a class="nav-button" id="prewbutton" href="#"><img src = "./images/button.png" /></a><a class="nav-button" id="nextbutton" href="#"><img src = "./images/button.png" /></a>')
+                .prependTo('.slider');
+            $('.nav-button').css({
+                position: 'absolute',
+                'z-index': '10',
+                opacity: '.4'
+            });
+            $('#prewbutton').css({
+                bottom: '6px',
+                left: '9px'
+            });
+            $('#nextbutton').css({
+                bottom: '10px',
+                right: '9px',
+                transform: 'rotate(180deg)',
+                '-moz-transform': 'rotate(180deg)',
+                '-ms-transform': 'rotate(180deg)',
+                '-webkit-transform': 'rotate(180deg)',
+                '-o-transform': 'rotate(180deg)'
+            });
+
+            $('#nextbutton').click(function(){
+                animSlide("next");
+                return false;
+            })
+            $('#prewbutton').click(function(){
+                animSlide("prew");
+                return false;
+            })
+
+        
+        }
+
+        var pause = false;
+        var rotator = function(){
+            if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
+        }
+        $('.slider').hover(
+            function(){clearTimeout(slideTime); pause = true;},
+            function(){pause = false; rotator();
+            });
+        rotator();
+    });
+})(jQuery);

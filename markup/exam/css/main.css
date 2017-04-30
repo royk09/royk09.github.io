@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: OleoScriptBold;
+    src: local("OleoScript Bold"),
+    url("../fonts/OleoScript-Bold.otf");
+}
+
+@font-face {
+    font-family: OleoScriptRegular;
+    src: local("OleoScript Regular"),
+    url("../fonts/OleoScript-Regular.otf");
+}
+
+@font-face {
+    font-family: OxygenMonoRegular;
+    src: local("OxygenMono Regular"),
+    url("../fonts/OxygenMono-Regular.otf");
+}
+
+body{
+    background: #f9f9f9;
+}
+
+.wrapper{
+    background: #ffffff;
+    width: 972px;
+    margin: 60px auto;
+    border: 1px solid #eeeeee;
+}
+
+.logo{
+    margin: 21px 0 0 29px;
+    float: left;
+}
+
+.logo p.logo-title{
+    font: 41px "OleoScriptRegular", sans-serif;
+    color: #222222;
+}
+
+.logo p.logo-desc{
+    font: 11px "Arial", sans-serif;
+    color: #999999;
+    padding-left: 3px;
+}
+
+
+.main-menu{
+    float: left;
+    margin: 39px 0 0 236px;
+}
+.main-menu ul {
+    list-style: none;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 17px;
+    position: relative;
+}
+
+.menu > li:last-child {
+    margin-right: 0;
+}
+
+.main-menu a {
+    display: block;
+    font: 14px "Oxygen", sans-serif;
+    padding: 8px 15px;
+    text-decoration: none;
+    outline: none;
+    color: #666666;
+}
+
+.main-menu .sub-menu li {
+    padding: 10px 7px 0;
+}
+
+.main-menu .sub-menu a {
+   font-size: 13px;
+    padding: 0 6px 3px;
+    --border-bottom: 1px solid #e5e5e5;
+    border-radius: 3px;
+    line-height: 1em;
+}
+
+.main-menu .sub-menu li::after{
+     content: '';
+     display: block;
+     margin-top: 7px;
+     --padding-top: 5px;
+     border-bottom: 1px solid #e5e5e5;
+ }
+
+.main-menu .sub-menu li:last-child::after{
+    border: none;
+}
+
+.main-menu .sub-menu .sub-menu-desc {
+    font: 10px "Arial", sans-serif;
+    color: #bebebe;
+    display: none;
+}
+
+.main-menu .sub-menu a:hover {
+    background-color: #f3f3f3;
+    padding: 6px 6px;
+    line-height: 1.1em;
+}
+
+.main-menu .sub-menu a:hover .sub-menu-desc{
+    display: block;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    left: 0;
+    width: 158px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    display: none;
+}
+
+.menu .sub-menu::before, .menu .sub-menu::after {
+    content: '';
+    position: absolute;
+    left: 20px; top: 0;
+    border: 8px solid transparent;
+    border-top: 6px solid #dddddd;
+}
+
+.menu .sub-menu::after {
+    border-top: 6px solid white;
+    top: -2px;
+}
+
+.menu li .sub-menu{
+   --display: none;
+}
+
+.menu li:hover .sub-menu{
+    display: block;
+}
+
+.menu li:hover > a{
+    color: #222222;
+}
+
+button.apply{
+    background: #ffbc45;
+    background: linear-gradient(to top, #ffc653, #ffbc44);
+    font: 14px "Oxygen", sans-serif;
+    color: #ffffff;
+    border: 1px solid #efba4f;
+    border-radius: 2px;
+    padding: 4px 7px 5px 6px;
+    letter-spacing: 0.1px;
+    text-shadow: #efaa3a 1px -1px 1px;
+    cursor: pointer;
+    margin: 42px 0 0 19px;
+}
+button.apply:hover{
+    background: linear-gradient(to bottom, #ffc653, #ffbc44);
+    text-shadow: #000 1px -1px 3px;
+}
+
+button.apply:active{
+    position: relative;
+    top: 1px;
+    left: 1px;
+
+}
+
+button.apply:focus{
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+.slider{
+    height: 188px;
+    width: 292px;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+    --overflow: hidden;
+
+}
+
+.slide{
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: absolute;
+
+}
+
+.slide .slider-desc{
+    position: absolute;
+
+    z-index: 10;
+    bottom: 9px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 214px;
+    height: 49px;
+    border-radius: 2px;
+    opacity: 0.8;
+
+    left: 50%;
+    margin-left: -107px;
+    --margin-left: 35px;
+}
+
+/*.slide .slider-desc::before{*/
+    /*content: url("../images/button.png");*/
+    /*position: absolute;*/
+    /*z-index: 10;*/
+    /*top:0;*/
+    /*opacity: .4;*/
+    /*left: -36px;*/
+/*}*/
+
+/*.slide .slider-desc::after{*/
+    /*content: url("../images/button.png");*/
+    /*-moz-transform: rotate(180deg); !* Для Firefox *!*/
+    /*-ms-transform: rotate(180deg); !* Для IE *!*/
+    /*-webkit-transform: rotate(180deg); !* Для Safari, Chrome, iOS *!*/
+    /*-o-transform: rotate(180deg); !* Для Opera *!*/
+    /*transform: rotate(180deg);*/
+    /*position: absolute;*/
+    /*z-index: 10;*/
+    /*bottom: 0;*/
+    /*right: -35px;*/
+    /*opacity: .4;*/
+/*}*/
+
+/*.slider-desc:hover::before, .slider-desc:hover::after{*/
+    /*cursor: pointer;*/
+    /*opacity: 1;*/
+/*}*/
+
+.slider .slide img{
+    width: 292px;
+    height: 188px;
+}
+
+/*section.title::after{*/
+    /*content: '';*/
+    /*display: block;*/
+    /*margin: 7px;*/
+    /*border-bottom: 1px solid #e5e5e5;*/
+/*}*/
