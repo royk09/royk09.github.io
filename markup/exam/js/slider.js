@@ -53,6 +53,7 @@
                 '-o-transform': 'rotate(180deg)'
             });
 
+
             $('#nextbutton').click(function(){
                 animSlide("next");
                 return false;
@@ -61,8 +62,16 @@
                 animSlide("prew");
                 return false;
             })
+            $('#nextbutton, #prewbutton').hover(
+                function () {
+                    $(this).css({"opacity": "1",
+                    });
+        },
+            function () {
+                $(this).css({"opacity": ".4"});
+            }
 
-        
+        );
         }
 
         var pause = false;
