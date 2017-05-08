@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <title>Office Time</title>
     <link type = "text/css" rel = "stylesheet" href = "css/main.css"  />
+    <link type = "text/css" rel = "stylesheet" href = "css/animate.css"  />
     <link rel="stylesheet" type="text/css" href="libs/css/font-awesome.css" />
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="js/jquery.textillate.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="logo">
-                <p class="logo-title">Officetime</p>
+                <p class="logo-title" data-out-effect="fadeOutUpBig" data-out-shuffle="true">Officetime</p>
                 <p class="logo-desc">Officetime a psd template</p>
             </div>
             <nav class="main-menu">
@@ -36,42 +38,83 @@
 
             </nav>
             <p><button class="apply">Apply Now</button></p>
-            <div style="clear: left"></div>
+            <div style="clear: both"></div>
         </header>
         <section class="title">
 
             <div class="slider">
+                <div class="slide-wrapper">
                 <div class="slide" >
                     <img src="images/spiderman.jpg" alt="Photo Hero" />
                     <div class="slider-desc">
                         <a href="#">
-                            <h3>Great Lakehouse with Land</h3>
+                            <h3>Great Spider Man</h3>
                             <p><span>from 21K</span> - in Texas, USA</p>
                         </a>
                     </div>
                 </div>
+                    <div class="slide-title">
+                        <h1>The Amazing Spider-Man</h1>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit</p>
+                        <a href="#" class="trailer-button">Watch Trailer<br /><span>in 720p quality</span></a>
+                    </div>
+
+
+
+                </div>
+                <div class="slide-wrapper">
                 <div class="slide" >
                     <img src="images/house.jpg" alt="Photo house" />
                     <div class="slider-desc">
                         <a href="#">
-                            <h3>Great Spider Man</h3>
+                            <h3>Great Lakehouse with Land</h3>
                             <p><span>from 21K</span> - in New York, USA</p>
                         </a>
                     </div>
                 </div>
+                    <div class="slide-title">
+                        <h1>The Amazing Lakehouse with Land</h1>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit</p>
+                        <a href="#" class="trailer-button">Watch Trailer<br /><span>in 720p quality</span></a>
+                    </div>
+                </div>
+
+                <div class="slide-wrapper">
+                    <div class="slide" >
+                        <img src="images/house.jpg" alt="Photo house" />
+                        <div class="slider-desc">
+                            <a href="#">
+                                <h3>ggggggggg</h3>
+                                <p><span>from 21K</span> - in New York, USA</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide-title">
+                        <h1>The Amazing Lakehouse with Land</h1>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit</p>
+                        <a href="#" class="trailer-button">Watch Trailer<br /><span>in 720p quality</span></a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="page-title">
-                <h1>The Amazing Spider-Man</h1>
-                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit</p>
-            </div>
-            <div class="trailer-button">
-                <a href="#"><span>Watch Trailer</span><br />in 720p quality</a>
-            </div>
+
         </section>
 
 
     </div>
     <script type="text/javascript" src="js/slider.js"></script>
+    <script>
+        $(function () {
+            $('.logo-title').textillate({
+                in: {
+                    loop: true,
+                }
+            });
+        })
+
+
+    </script>
+
 </body>
 </html>

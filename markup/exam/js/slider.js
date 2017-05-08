@@ -2,34 +2,52 @@
  * Created by admin on 28.04.2017.
  */
 (function ($) {
-    var hwSlideSpeed = 1000;
-    var hwTimeOut = 3000;
+    var hwSlideSpeed = 2000;
+    var hwTimeOut = 5000;
     var hwNeedLinks =true;
 
     $(document).ready(function(e) {
         $('.slide').hide().eq(0).show();
+        $('.slide-title').hide().eq(0).show();
+
         var slideNum = 0;
         var slideTime;
-        var slideCount = $('.slide').length;
+        var slideCount = $('.slide-wrapper').length;
 
 
         var animSlide = function(arrow){
+
+
             clearTimeout(slideTime);
-            $('.slide').eq(slideNum).fadeIn( hwSlideSpeed, "linear");
-            if(arrow == "next"){
+            if(arrow == 'next'){
+                hide();
                 if(slideNum == (slideCount-1)){slideNum=0;}
                 else{slideNum++}
+                show();
             }
-            else if(arrow == "prew")
+            else if(arrow == 'prew')
             {
+                hide();
                 if(slideNum == 0){slideNum=slideCount-1;}
                 else{slideNum-=1}
+                show();
             }
             else{
                 slideNum = arrow;
             }
-            $('.slide').eq(slideNum).fadeOut( hwSlideSpeed, "linear",  rotator);
 
+
+
+
+
+        }
+        function show() {
+            $('.slide').eq(slideNum).stop().fadeIn(hwSlideSpeed);
+            setTimeout(function(){$('.slide-title').eq(slideNum).stop().show(hwSlideSpeed,  rotator)}, 1);
+        }
+        function hide() {
+            $('.slide').eq(slideNum).stop().fadeOut(hwSlideSpeed);
+            $('.slide-title').eq(slideNum).stop().hide( hwSlideSpeed);
         }
         if(hwNeedLinks){
             var $linkArrow = $('<a class="nav-button" id="prewbutton" href="#"><img src = "./images/button.png" /></a><a class="nav-button" id="nextbutton" href="#"><img src = "./images/button.png" /></a>')
@@ -55,12 +73,12 @@
 
 
             $('#nextbutton').click(function(){
-                animSlide("next");
-                return false;
+                animSlide('next');
+              //  return false;
             })
             $('#prewbutton').click(function(){
-                animSlide("prew");
-                return false;
+                animSlide('prew');
+              //  return false;
             })
             $('#nextbutton, #prewbutton').hover(
                 function () {
@@ -78,10 +96,11 @@
         var rotator = function(){
             if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
         }
-        $('.slider').hover(
+        $('.slide-wrapper').hover(
             function(){clearTimeout(slideTime); pause = true;},
             function(){pause = false; rotator();
             });
+
         rotator();
     });
 })(jQuery);

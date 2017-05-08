@@ -151,7 +151,7 @@ body{
 }
 
 button.apply{
-    background: #ffbc45;
+    --background: #ffbc45;
     background: linear-gradient(to top, #ffc653, #ffbc44);
     font: 14px "Oxygen", sans-serif;
     color: #ffffff;
@@ -186,9 +186,9 @@ button.apply:focus{
     width: 292px;
     padding: 5px;
     position: relative;
-    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3), 0px 26px 14px -27px #000000;
     --overflow: hidden;
-
+    margin: 63px 0 0 78px;
 }
 
 .slide{
@@ -214,15 +214,95 @@ button.apply:focus{
     --margin-left: 35px;
 }
 
-.slider #nextbutton:hover,
-.slider #prewbutton:hover{
-    border-radius: 5px;
-    width: 28px;
-    height: 40px;
-    background: #e5e5e5;
-    
+.slide .slider-desc a{
+    text-decoration: none;
+}
+
+.slide .slider-desc h3{
+    font: 13px "Arial", sans-serif;
+    color: #fff;
+    margin: 6px 0 0 8px;
+}
+
+.slide .slider-desc p{
+    font: 11px "Arial", sans-serif;
+    color: #676767;
+    margin: 5px 0 0 8px;
+}
+
+.slide .slider-desc p span{
+    color: #ffc14c;
+}
+
+.slide-wrapper .slide-title{
+    position: absolute;
+    left: 318px;
+    width: 485px;
+    text-align: right;
 
 }
+
+.slide-wrapper .slide-title h1{
+    padding-top: 6px;
+    font: 38px "Oxygen", sans-serif;
+    color: #515151;
+    letter-spacing: -0.6px;
+}
+.slide-wrapper .slide-title p{
+    font: 14px "Oxygen", sans-serif;
+    color: #666666;
+    letter-spacing: -0.25px;
+    padding: 6px 0 0 75px;
+}
+
+
+.slide-wrapper .slide-title a{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    --width: 168px;
+    background: linear-gradient(to top, #ffc653, #ffbc44);
+    font: 15px "Oxygen", sans-serif;
+    color: #ffffff;
+    border: 1px solid #efba4f;
+    border-radius: 2px;
+    padding: 4px 7px 5px 6px;
+    letter-spacing: 0.8px;
+    text-shadow: #efaa3a 1px -1px 1px;
+    cursor: pointer;
+    margin: 9px 0 0 319px;
+}
+
+.slide-wrapper .slide-title a span{
+    display: block;
+    font: bold 9px "Oxygen", sans-serif;
+    text-transform: uppercase;
+    color: #d28600;
+    text-shadow: #ffd07f 0px 1px 1px;
+}
+
+.slide-wrapper .slide-title a::after {
+    content: '';
+   -- display: block;
+    margin: 0 0px 0 10px;
+    border-right: 1px solid black;
+}
+
+.slide-wrapper .slide-title p::after {
+    content: '';
+    display: block;
+    margin: 14px -5px 0 -71px;
+    border-bottom: 1px solid #f6f6f6;
+}
+/*.slider #nextbutton:hover,*/
+/*.slider #prewbutton:hover{*/
+    /*border-radius: 5px;*/
+    /*width: 28px;*/
+    /*height: 40px;*/
+    /*background: #e5e5e5;*/
+    /**/
+
+/*}*/
 /*.slide .slider-desc::before{*/
     /*content: url("../images/button.png");*/
     /*position: absolute;*/
