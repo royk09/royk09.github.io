@@ -16,8 +16,8 @@
     <div class="wrapper">
         <header>
             <div class="logo">
-                <p class="logo-title" data-out-effect="fadeOutUpBig" data-out-shuffle="true">Officetime</p>
-                <p class="logo-desc">Officetime a psd template</p>
+                <p class="logo-title" data-in-effect="wobble" data-out-shuffle="true">Officetime</p>
+                <p class="logo-desc" data-in-effect="fadeInLeft">Officetime a psd template</p>
             </div>
             <nav class="main-menu">
                 <ul class="menu">
@@ -97,21 +97,21 @@
                 </div>
 
             </div>
-
-
         </section>
-
+        <section class="middle-section">
+            <h2 class="middle-section-title">The Undiscovered Beauty</h2>
+        </section>
 
     </div>
     <script type="text/javascript" src="js/slider.js"></script>
     <script>
         $(function () {
-            $('.logo-title').textillate({
+            $('.logo-title, .logo-desc').textillate({
                 in: {
                     loop: true,
                 }
             });
-        })
+        });
 
 
     </script>
