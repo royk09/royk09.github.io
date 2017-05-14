@@ -43,7 +43,7 @@
         }
         function show() {
             $('.slide').eq(slideNum).stop().fadeIn(hwSlideSpeed);
-            setTimeout(function(){$('.slide-title').eq(slideNum).stop().show("slide", { direction: "left" }, hwSlideSpeed,  rotator)}, 1);
+            setTimeout(function(){$('.slide-title').eq(slideNum).stop().show(hwSlideSpeed,  rotator)}, 1);
         }
         function hide() {
             $('.slide').eq(slideNum).stop().fadeOut(hwSlideSpeed);
@@ -74,11 +74,11 @@
 
             $('#nextbutton').click(function(){
                 animSlide('next');
-              //  return false;
+                return false;
             })
             $('#prewbutton').click(function(){
                 animSlide('prew');
-              //  return false;
+                return false;
             })
             $('#nextbutton, #prewbutton').hover(
                 function () {
