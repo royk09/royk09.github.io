@@ -14,40 +14,41 @@
         var slideTime;
         var slideCount = $('.slide-wrapper').length;
 
-
         var animSlide = function(arrow){
-
 
             clearTimeout(slideTime);
             if(arrow == 'next'){
-                hide();
+
+                hideSlide();
                 if(slideNum == (slideCount-1)){slideNum=0;}
                 else{slideNum++}
-                show();
+
+                showSlide();
             }
             else if(arrow == 'prew')
             {
-                hide();
+                hideSlide();
                 if(slideNum == 0){slideNum=slideCount-1;}
                 else{slideNum-=1}
-                show();
+                showSlide();
             }
             else{
                 slideNum = arrow;
             }
 
 
-
-
-
         }
-        function show() {
-            $('.slide').eq(slideNum).stop().fadeIn(hwSlideSpeed);
-            setTimeout(function(){$('.slide-title').eq(slideNum).stop().show(hwSlideSpeed,  rotator)}, 1);
+        function showSlide() {
+            $('.slide').eq(slideNum).stop(true, true).fadeIn(hwSlideSpeed);
+            $('.slide-title').eq(slideNum).stop(true, true).show('slide', {'direction':'left'}, hwSlideSpeed, rotator);
+
+          //  return false;
+            //show(hwSlideSpeed,  rotator)}, 1);
         }
-        function hide() {
-            $('.slide').eq(slideNum).stop().fadeOut(hwSlideSpeed);
-            $('.slide-title').eq(slideNum).stop().hide(hwSlideSpeed/2);
+        function hideSlide() {
+            $('.slide').eq(slideNum).stop(true, true).fadeOut(hwSlideSpeed/2);
+            $('.slide-title').eq(slideNum).stop(true, true).hide('slide', {'direction':'right'}, hwSlideSpeed/2);
+          //  return false;
         }
         if(hwNeedLinks){
             var $linkArrow = $('<a class="nav-button" id="prewbutton" href="#"><img src = "./images/button.png" /></a><a class="nav-button" id="nextbutton" href="#"><img src = "./images/button.png" /></a>')
@@ -71,12 +72,13 @@
                 '-o-transform': 'rotate(180deg)'
             });
 
-
             $('#nextbutton').click(function(){
+
                 animSlide('next');
                 return false;
             })
             $('#prewbutton').click(function(){
+
                 animSlide('prew');
                 return false;
             })
